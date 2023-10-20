@@ -9,6 +9,9 @@ public class Animal {
 		this.couleur= couleur;
 		this.poids=poids;
 	}
+	public String toString() {
+		return (" Je suis un objet de " +this.getClass()+", je suis de couleur "+ this.couleur +" et je pèse " + this.poids+" kg "); 
+	}
 	public void boire(){
 		System.out.println("je bois de l'eau");
 	}
@@ -17,9 +20,6 @@ public class Animal {
 	}
 	public void crier(){
 		System.out.println(" Je crie ");
-	}
-	public String toString() {
-		return (" Je suis un objet de " +this.getClass()+", je suis de couleur "+ this.couleur +" et je pèse " + this.poids+" kg "); 
 	}
 	public void decrisToi(){
 		System.out.println(this.toString());
